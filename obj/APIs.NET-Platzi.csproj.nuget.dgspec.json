@@ -1,15 +1,15 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\yonaiker.ocando\\Documents\\Cursos\\APIs.NET-Platzi\\APIs.NET.csproj": {}
+    "C:\\Users\\yonaiker.ocando\\Documents\\Cursos\\APIs.NET-Platzi\\APIs.NET-Platzi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\yonaiker.ocando\\Documents\\Cursos\\APIs.NET-Platzi\\APIs.NET.csproj": {
+    "C:\\Users\\yonaiker.ocando\\Documents\\Cursos\\APIs.NET-Platzi\\APIs.NET-Platzi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\yonaiker.ocando\\Documents\\Cursos\\APIs.NET-Platzi\\APIs.NET.csproj",
-        "projectName": "APIs.NET",
-        "projectPath": "C:\\Users\\yonaiker.ocando\\Documents\\Cursos\\APIs.NET-Platzi\\APIs.NET.csproj",
+        "projectUniqueName": "C:\\Users\\yonaiker.ocando\\Documents\\Cursos\\APIs.NET-Platzi\\APIs.NET-Platzi.csproj",
+        "projectName": "APIs.NET-Platzi",
+        "projectPath": "C:\\Users\\yonaiker.ocando\\Documents\\Cursos\\APIs.NET-Platzi\\APIs.NET-Platzi.csproj",
         "packagesPath": "C:\\Users\\yonaiker.ocando\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\yonaiker.ocando\\Documents\\Cursos\\APIs.NET-Platzi\\obj\\",
         "projectStyle": "PackageReference",
@@ -39,12 +39,6 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "dependencies": {
-            "Swashbuckle.AspNetCore": {
-              "target": "Package",
-              "version": "[6.2.3, )"
-            }
-          },
           "imports": [
             "net461",
             "net462",
