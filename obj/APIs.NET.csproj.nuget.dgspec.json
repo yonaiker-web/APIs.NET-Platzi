@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\yonaiker.ocando\\Cursos\\APIs.NET\\APIs.NET.csproj": {}
+    "C:\\Users\\yonaiker.ocando\\Documents\\Cursos\\APIs.NET-Platzi\\APIs.NET.csproj": {}
   },
   "projects": {
-    "C:\\Users\\yonaiker.ocando\\Cursos\\APIs.NET\\APIs.NET.csproj": {
+    "C:\\Users\\yonaiker.ocando\\Documents\\Cursos\\APIs.NET-Platzi\\APIs.NET.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\yonaiker.ocando\\Cursos\\APIs.NET\\APIs.NET.csproj",
+        "projectUniqueName": "C:\\Users\\yonaiker.ocando\\Documents\\Cursos\\APIs.NET-Platzi\\APIs.NET.csproj",
         "projectName": "APIs.NET",
-        "projectPath": "C:\\Users\\yonaiker.ocando\\Cursos\\APIs.NET\\APIs.NET.csproj",
+        "projectPath": "C:\\Users\\yonaiker.ocando\\Documents\\Cursos\\APIs.NET-Platzi\\APIs.NET.csproj",
         "packagesPath": "C:\\Users\\yonaiker.ocando\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\yonaiker.ocando\\Cursos\\APIs.NET\\obj\\",
+        "outputPath": "C:\\Users\\yonaiker.ocando\\Documents\\Cursos\\APIs.NET-Platzi\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\yonaiker.ocando\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -63,7 +63,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.200\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.302\\RuntimeIdentifierGraph.json"
         }
       }
     }

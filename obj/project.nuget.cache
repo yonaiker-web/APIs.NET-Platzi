@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "6NPR+z859cVJVVH4Pdh1fHv95mGZ/laMMJZkdiGb4KRFoGP5q0CSvgKzcunYRImxi/g5K2nRFcUC0gZA6eXMHA==",
+  "dgSpecHash": "GzaLyz2aGT3qiOlhz/2mA3RYkxs0c65IhjKWo7+oQ51p8uQMqpHAZZ4yenLPe6/dEibmT/vWznWziCtEAWkRtg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\yonaiker.ocando\\Cursos\\APIs.NET\\APIs.NET.csproj",
+  "projectFilePath": "C:\\Users\\yonaiker.ocando\\Documents\\Cursos\\APIs.NET-Platzi\\APIs.NET.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\yonaiker.ocando\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
     "C:\\Users\\yonaiker.ocando\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
