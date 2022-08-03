@@ -21,7 +21,7 @@ public class WeatherForecastController : ControllerBase
         _logger = logger;
 
         //validamos si ListWeatherForecast tiene algun registro
-        if(ListWeatherForecast == null || !ListWeatherForecast.Any())
+        if (ListWeatherForecast == null || !ListWeatherForecast.Any())
         {
             ListWeatherForecast = Enumerable.Range(1, 5).Select(index => new WeatherForecast
             {
@@ -42,12 +42,13 @@ public class WeatherForecastController : ControllerBase
     [Route("action")]
     public IEnumerable<WeatherForecast> Get()
     {
+        _logger.LogDebug("Retornando la lista de watherforecast");
         return ListWeatherForecast;
     }
 
     [HttpPost]
     public IActionResult Post(WeatherForecast weatherForecast)
-    {   
+    {
         //agregamos a lista lo que pasemos
         ListWeatherForecast.Add(weatherForecast);
 
