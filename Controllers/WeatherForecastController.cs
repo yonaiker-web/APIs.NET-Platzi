@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 
-namespace APIs.NET.Controllers;
+namespace APIs.NET;
 
 [ApiController]
 //agregamos una ruta para todas las peticiones
