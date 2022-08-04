@@ -17,6 +17,7 @@ public class HelloWordController : ControllerBase
         helloWordService = helloword;
     }
 
+    [HttpGet]
     public IActionResult Get()
     {
         _logger.LogInformation("retornando algo");

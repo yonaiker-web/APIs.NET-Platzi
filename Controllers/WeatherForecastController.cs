@@ -35,11 +35,11 @@ public class WeatherForecastController : ControllerBase
     }
 
     [HttpGet(Name = "GetWeatherForecast")]
-    //agregamos una ruta en espesifico a esta peticion
-    [Route("Get/weatherforecast")]
-    [Route("Get/weatherforecast2")]
-    //creamos una ruta dinamica (agarra el nombre de la peticion (Get))
-    [Route("action")]
+    //agregamos una ruta en especifico a esta peticion
+    // [Route("Get/weatherforecast")]
+    // [Route("Get/weatherforecast2")]
+    // //creamos una ruta dinamica (agarra el nombre de la peticion (Get))
+    // [Route("action")]
     public IEnumerable<WeatherForecast> Get()
     {
         _logger.LogDebug("Retornando la lista de watherforecast");
