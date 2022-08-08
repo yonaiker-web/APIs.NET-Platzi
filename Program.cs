@@ -10,7 +10,7 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-//realizar las inyeccion de dependencias nates del Build()
+//realizar las inyeccion de dependencias antes del Build()
 //este crear una nueva instancia de la dependncia que usamos pero a nivel de controlador o a nivel de clases
 // builder.Services.AddScoped();
 //se va a crear una unica implementacion o instancia y se crea a nivel de toda a API (lo crea en memoria)
@@ -20,6 +20,9 @@ builder.Services.AddSwaggerGen();
 // builder.Services.AddScoped<IHelloWordService, HelloWordService>();
 builder.Services.AddScoped<IHelloWordService>(p => new HelloWordService());
 
+//implementamos la inyeccion de dependencias para los sevicios de Category y Task
+builder.Services.AddScoped<ICategoryService, CategoryService>();
+builder.Services.AddScoped<ITaskService, TaskService>();
 
 var app = builder.Build();
 
