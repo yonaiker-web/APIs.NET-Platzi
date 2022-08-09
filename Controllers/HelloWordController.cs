@@ -10,11 +10,13 @@ public class HelloWordController : ControllerBase
 
     private readonly ILogger<HelloWordController> _logger;
     IHelloWordService helloWordService;
+    TasksContext dbContext;
 
-    public HelloWordController(ILogger<HelloWordController> logger, IHelloWordService helloword)
+    public HelloWordController(ILogger<HelloWordController> logger, IHelloWordService helloword, TasksContext db)
     {
         _logger = logger;
         helloWordService = helloword;
+        dbContext = db;
     }
 
     [HttpGet]
@@ -22,5 +24,14 @@ public class HelloWordController : ControllerBase
     {
         _logger.LogInformation("retornando algo");
         return Ok(helloWordService.GetHelloWord());
+    }
+
+    [HttpGet]
+    [Route("createdb")]
+    public IActionResult CreateDatabase()
+    {
+        dbContext.Database.EnsureCreated();
+
+        return Ok();
     }
 }

@@ -16,6 +16,11 @@ builder.Services.AddSwaggerGen();
 //se va a crear una unica implementacion o instancia y se crea a nivel de toda a API (lo crea en memoria)
 // builder.Services.AddSingleton()
 
+//agregando la coneccion a la base de datos 
+builder.Services.AddNpgsql<TasksContext>(builder.Configuration.GetConnectionString("TareasDb"));
+AppContext.SetSwitch("Npgsql.EnableLegacyTimestampBehavior", true);
+
+
 //en esta forma de hacer inyeccion de dependencia si cambiamos la interface o la clase, se cambia en todos los controladores que la usen
 // builder.Services.AddScoped<IHelloWordService, HelloWordService>();
 builder.Services.AddScoped<IHelloWordService>(p => new HelloWordService());
@@ -23,6 +28,7 @@ builder.Services.AddScoped<IHelloWordService>(p => new HelloWordService());
 //implementamos la inyeccion de dependencias para los sevicios de Category y Task
 builder.Services.AddScoped<ICategoryService, CategoryService>();
 builder.Services.AddScoped<ITaskService, TaskService>();
+
 
 var app = builder.Build();
 

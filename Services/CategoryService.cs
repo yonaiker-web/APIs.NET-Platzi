@@ -12,7 +12,7 @@ public class CategoryService : ICategoryService
     //para devolver una lista de las categorias
     public IEnumerable<Category> Get()
     {
-        return context.Categorys;
+        return context.Category;
     }
 
     //metodo para guardar
@@ -26,7 +26,7 @@ public class CategoryService : ICategoryService
     public async System.Threading.Tasks.Task Update(Guid id, Category category)
     {
         //buscamos el elemento por id
-        var categoryCurrent = context.Categorys.Find(id);
+        var categoryCurrent = context.Category.Find(id);
 
         //si encontramos el objeto
         if (categoryCurrent != null)
@@ -44,7 +44,7 @@ public class CategoryService : ICategoryService
     public async System.Threading.Tasks.Task Delete(Guid id)
     {
         //buscamos el elemento por id
-        var categoryCurrent = context.Categorys.Find(id);
+        var categoryCurrent = context.Category.Find(id);
 
         //si encontramos el objeto
         if (categoryCurrent != null)

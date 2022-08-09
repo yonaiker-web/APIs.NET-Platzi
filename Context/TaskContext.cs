@@ -5,7 +5,7 @@ namespace APIs.NET;
 public class TasksContext : DbContext
 {
     //agregamos las colecciones que representan las tablas en la base de datos
-    public DbSet<Category> Categorys { get; set; }
+    public DbSet<Category> Category { get; set; }
     public DbSet<Task> Tasks { get; set; }
 
     public TasksContext(DbContextOptions<TasksContext> options) : base(options) { }
